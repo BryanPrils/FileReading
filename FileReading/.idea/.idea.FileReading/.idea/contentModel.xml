@@ -21,8 +21,10 @@
             </e>
           </e>
         </e>
+        <e p="SimpleXmlFile.xml" t="Include" />
         <e p="textFile.txt" t="Include" />
         <e p="TextFileReader.cs" t="Include" />
+        <e p="XmlFileReader.cs" t="Include" />
       </e>
       <e p="FileReading.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

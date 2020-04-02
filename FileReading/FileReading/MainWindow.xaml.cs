@@ -23,9 +23,14 @@ namespace FileReading
         public MainWindow()
         {
             var textFile = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "textFile.txt");
+            var xmlFile = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "SimpleXmlFile.xml");
             InitializeComponent();
             var fileReader = new TextFileReader();
             fileReader.ReadTextFile(textFile);
+            
+            
+            var xmlFileReader = new XmlFileReader();
+            xmlFileReader.ReadXMLFile(xmlFile);
 
         }
     }

@@ -14,7 +14,7 @@ namespace FileReading
                 Console.WriteLine(line);
             }
 
-            Console.ReadKey();
+            //Console.ReadKey();
 
         }
     }
