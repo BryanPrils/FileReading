@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FileReading
 {
@@ -22,7 +22,11 @@ namespace FileReading
     {
         public MainWindow()
         {
+            var textFile = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "textFile.txt");
             InitializeComponent();
+            var fileReader = new TextFileReader();
+            fileReader.ReadTextFile(textFile);
+
         }
     }
 }
